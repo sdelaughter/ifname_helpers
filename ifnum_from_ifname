@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ip addr show dev $1 | head -n1 | awk '{print $1}' | tr -d \:

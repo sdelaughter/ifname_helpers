@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ifnum_from_ifname $(ifname_for_dest_hostname $1)

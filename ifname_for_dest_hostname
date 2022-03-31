@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ifname_for_dest_ip $(ip_from_hostname $1)
