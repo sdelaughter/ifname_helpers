@@ -1,5 +1,5 @@
 # ifname_helpers
-helper scripts to get interface names and numbers corresponding to local and remote IPs
+Assorted helper scripts to get interface names and numbers corresponding to local and remote IPs.  Note that interface numbers correspond to the `ip` tool and usually differ from the numbers used by `tcpdump`.  Interface names should be standard across both.
 
 ## hostname_to_ip
 - Input: The name of a remote host
@@ -32,9 +32,3 @@ helper scripts to get interface names and numbers corresponding to local and rem
 ## ifnum_for_remote_hostname
 - Input: The name of a remote host
 - Output: The number of the interface used to send traffic to that host (found via `ip route get`)
-
-
-
-
-
-
