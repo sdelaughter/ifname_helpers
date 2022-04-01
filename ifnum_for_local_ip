@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ifname_to_ifnum $(ifname_for_local_ip $1)
