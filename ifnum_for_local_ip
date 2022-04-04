@@ -1,3 +1,4 @@
 #!/bin/bash
 
-ifname_to_ifnum $(ifname_for_local_ip $1)
+MYDIR="$(dirname "$(which "$0")")"
+$MYDIR/ifname_to_ifnum $($MYDIR/ifname_for_local_ip $1)
