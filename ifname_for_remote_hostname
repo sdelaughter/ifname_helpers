@@ -1,4 +1,3 @@
 #!/bin/bash
 
-MYDIR="$(dirname "$(which "$0")")"
-$MYDIR/ifname_for_remote_ip $($MYDIR/hostname_to_ip $1)
+ifname_for_remote_ip $(hostname_to_ip $1)

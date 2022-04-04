@@ -1,4 +1,3 @@
 #!/bin/bash
 
-MYDIR="$(dirname "$(which "$0")")"
-$MYDIR/ifname_to_ifnum $($MYDIR/ifname_for_remote_hostname $1)
+ifname_to_ifnum $(ifname_for_remote_hostname $1)
