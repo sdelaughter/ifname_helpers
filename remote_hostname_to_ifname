@@ -1,3 +1,4 @@
 #!/bin/bash
 
+cd $( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
 remote_ip_to_ifname $(hostname_to_ip $1)
