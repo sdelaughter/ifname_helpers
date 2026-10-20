@@ -1,0 +1,3 @@
+#!/bin/bash
+
+remote_ip_to_ifname $(hostname_to_ip $1)
