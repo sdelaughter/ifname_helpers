@@ -1,4 +1,4 @@
 #!/bin/bash
 
 cd $( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
-ifname_to_ifnum $(remote_hostname_to_ifname $1)
+./ifname_to_ifnum $(./remote_hostname_to_ifname $1)
