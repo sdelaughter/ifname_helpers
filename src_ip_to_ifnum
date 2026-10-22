@@ -1,0 +1,4 @@
+#!/bin/bash
+
+ifname=$(netstat -ie | grep -B1 $1 | head -n1 | awk '{print $1}' | tr -d \:)
+ip addr show dev $ifname | head -n1 | awk '{print $1}' | tr -d \: 

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+ip_addr=$(dig +noall +answer $1 | awk '{print $NF}')
+ip route get $ip_addr | grep -oP "dev\s+\K\w+"
