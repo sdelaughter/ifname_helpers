@@ -1,0 +1,4 @@
+#!/bin/bash
+
+ifname=$(ip route get $1 | grep -oP "dev\s+\K\w+")
+ip -4 -o addr show dev $ifname | awk '{split($4,a,"/"); print a[1]}'
